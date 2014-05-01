@@ -12,5 +12,10 @@ public class RomanNumberTest {
 		assertEquals("II", RomanNumber.convert(2));
 		assertEquals("III", RomanNumber.convert(3));
 	}
+	
+	@Test
+	public void four() throws Exception {
+		assertEquals("IV", RomanNumber.convert(4));
+	}
 
 }
