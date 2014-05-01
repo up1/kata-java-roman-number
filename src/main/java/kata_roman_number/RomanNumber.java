@@ -4,14 +4,15 @@ public class RomanNumber {
 
 	public static String convert(int number) {
 		StringBuilder result = new StringBuilder();
+		int remain = number;
 		if (number >= 5) {
 			result.append("V");
-			number = number - 5;
+			remain = number - 5;
 		} else if (number == 4) {
 			result.append("IV");
-			number = number - 4;
+			remain = number - 4;
 		}
-		for (int i = 0; i < number; i++) {
+		for (int i = 0; i < remain; i++) {
 			result.append("I");
 		}
 
