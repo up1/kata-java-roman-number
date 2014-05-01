@@ -7,8 +7,9 @@ import org.junit.Test;
 public class RomanNumberTest {
 
 	@Test
-	public void one() {
+	public void oneTwo() {
 		assertEquals("I", RomanNumber.convert(1));
+		assertEquals("II", RomanNumber.convert(2));
 	}
 
 }
