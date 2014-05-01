@@ -12,9 +12,10 @@ public class RomanNumber {
 		for(int i=0; i<value.length; i++) {
 			remain = append(remain, value[i], roman[i], result);
 		}
-
-		for (int i = 0; i < remain; i++) {
+		
+		while(remain >= 1) {
 			result.append("I");
+			remain = remain -1;
 		}
 
 		return result.toString();
@@ -22,7 +23,7 @@ public class RomanNumber {
 
 	private static int append(int number, int value, String roman, StringBuilder result) {
 		int remain = number;
-		if (number >= value) {
+		while (remain >= value) {
 			result.append(roman);
 			remain = remain - value;
 		}
