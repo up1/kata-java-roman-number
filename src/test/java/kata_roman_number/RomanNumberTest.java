@@ -26,6 +26,8 @@ public class RomanNumberTest {
 	@Test
 	public void six() throws Exception {
 		assertEquals("VI", RomanNumber.convert(6));
+		assertEquals("VII", RomanNumber.convert(7));
+		assertEquals("VIII", RomanNumber.convert(8));
 	}
 
 }
